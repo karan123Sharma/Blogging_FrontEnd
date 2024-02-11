@@ -1,0 +1,43 @@
+<div class="container">
+
+    <div class="container bg-light-grey">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 mt-5">
+                <div class="card rounded shadow">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://www.thoughtco.com/thmb/bZbxog9GJSRxvMN9ZfHiXZLVRyo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Earth_Eastern_Hemisphere-56a8cda43df78cf772a0cc74.jpg" class="card-img img-fluid rounded-start" alt="Placeholder Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Trending</h5>
+                                <p class="card-text">Population: The world's population is over 7.8 billion people and continues to grow steadily.
+                                    Continents: There are seven continents: Africa, Antarctica, Asia, Europe, North America, Oceania, and South America.
+                                    Oceans: Earth has five major oceans: the Pacific, Atlantic, Indian, Southern (or Antarctic), and Arctic Oceans..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-light-grey">
+</div>
+</div>
+    <div class="row mt-5 bottom-card rounded ml-4 mr-5">
+      <div class="col-md-3 p-4" *ngFor="let item of data">
+        <!-- Bottom Card 1 -->
+        <div class="card" (click) ="clicked(item.blogId)">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{ item.blogTitle }}</h5>
+              <p class="card-text">{{ item.blogContent }}</p>
+              <p class="card-date">{{ item.blogDate }}</p>
+              <p class="card-date">{{ item.blogViews }}</p>
+            </div>
+          </div>
+          
+
+
+    </div>
+
+  

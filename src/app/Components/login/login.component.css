@@ -1,0 +1,46 @@
+.login-container {
+    background-image: url('../../Assets/Background.jpg');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust the width as needed */
+    max-width: 80%; /* Limit the maximum width to prevent it from becoming too large */
+    margin-top: 50px; /* Add some space from the top */
+}
+
+.card-body {
+    padding: 40px; /* Increase the padding */
+}
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

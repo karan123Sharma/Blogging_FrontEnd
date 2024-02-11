@@ -1,0 +1,40 @@
+.container1 {
+    background-image: url('../../Assets/Background2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.buttons {
+    margin-top: 30px;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}
+

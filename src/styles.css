@@ -1,1 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-light-grey {
+    background-color: #e7e7e7; /* Replace with your desired grey color code */
+}

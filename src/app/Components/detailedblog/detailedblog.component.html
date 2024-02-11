@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <div class="col-md-2 ml-5">
+        <!-- Insert Button -->
+        <button type="button" class="btn btn-primary btn-lg btn-block" (click)="clickInsert()">Insert</button>
+    </div>
+
+    <div class="blog-post card mt-4">
+        <div class="card-body">
+            <div class="blog-buttons text-right">
+                <div>
+                    <button class="btn btn-danger" (click)="clickdelete(blogobj.blogId)">Delete</button>
+                    <button class="btn btn-primary" style="margin-left: 10px;" (click)="clickupdate()">Update</button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="blog-info">
+                    <h2 class="card-title text-center">{{blogobj.blogTitle}}</h2>
+                    <p class="card-text">{{blogobj.blogContent}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

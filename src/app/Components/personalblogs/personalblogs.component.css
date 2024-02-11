@@ -1,0 +1,50 @@
+/* Style for the container */
+.container {
+    padding: 20px;
+}
+
+/* Style for the insert button */
+.insert-button {
+    margin-top: 20px;
+}
+
+/* Style for the personal list heading */
+.personal-list-heading {
+    margin-top: 50px;
+}
+
+/* Style for the individual card */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Style for the card title */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Style for the card content */
+.card-text {
+    font-size: 1rem;
+}
+
+/* Style for the card date */
+.card-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.bg-light-grey {
+    background-color: #1e0000; /* Replace with your desired grey color code */
+}
+

@@ -1,0 +1,30 @@
+.brand-font {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.link-font {
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-light:hover {
+    color: #000;
+    background-color: #fff;
+}
