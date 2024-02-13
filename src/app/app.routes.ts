@@ -7,6 +7,8 @@ import { UpdatecompComponent } from './Components/updatecomp/updatecomp.componen
 import { HomepageComponent } from './Components/homepage/homepage.component';
 import { PersonalblogsComponent } from './Components/personalblogs/personalblogs.component';
 import { ViewblogComponent } from './Components/viewblog/viewblog.component';
+import { ServicesComponent } from './Components/services/services.component';
+import { RegisterComponent } from './Components/register/register.component';
 
 export const routes: Routes = [
 
@@ -19,7 +21,8 @@ export const routes: Routes = [
     {path:"login",component:LoginComponent},
     {path:"personal",component:PersonalblogsComponent},
     {path:"viewBlog/:id",component:ViewblogComponent},
-    // {path:"regsiter",component:LoginComponent},
+    {path:"services",component:ServicesComponent},
+    {path:"register",component:RegisterComponent},
 
 
 ];

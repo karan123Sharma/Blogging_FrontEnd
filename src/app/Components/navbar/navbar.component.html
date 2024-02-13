@@ -1,17 +1,16 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand brand-font" routerLink="/login" >Bloggers</a>
+        <a class="navbar-brand brand-font" routerLink="/login">Bloggers</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
                 <a class="nav-link active mx-2 link-font" aria-current="page" routerLink="/allblogs">Home</a>
-                <a class="nav-link mx-2 link-font" href="#">Contact</a>
-                <a class="nav-link mx-2 link-font" href="#">Services</a>
+                <a class="nav-link mx-2 link-font" href="/services">Services</a>
             </div>
         </div>
-        <button class="btn btn-outline-light" type="button" (click)="logout()">Logout</button>
+        <button class="btn btn-outline-light" *ngIf="!isHomePage()"   type="button" (click)="logout()">Logout</button>
     </div>
 </nav>
 

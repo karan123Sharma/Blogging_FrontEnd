@@ -15,10 +15,10 @@ export class HomepageComponent {
   ngOnInit(): void {
   }
 
-  // navigateToRegister(): void {
-  //   // Navigate to the registration page
-  //   this.router.navigate(['/register']);
-  // }
+  navigateToRegister(): void {
+    // Navigate to the registration page
+    this.router.navigate(['/register']);
+  }
 
   navigateToLogin(): void {
     // Navigate to the login page

@@ -17,7 +17,7 @@ export class DetailedblogComponent {
   constructor(private api:ApiService,private route:ActivatedRoute,private router:Router){}
 
   id!:number;
-
+  showDeleteModal:Boolean = false;
   ngOnInit():void{
     this.id = this.route.snapshot.params['id'];
     console.log(this.id);
@@ -26,6 +26,13 @@ export class DetailedblogComponent {
     this.blogobj = data;
     })
   }
+
+
+
+  checkDelete(): void {
+    this.showDeleteModal = true;
+  }
+
   clickdelete(id: number) {
     console.log(id);
     this.api.deleteBlogById(id).subscribe(
@@ -42,6 +49,13 @@ export class DetailedblogComponent {
     this.router.navigate(['/insertblog']);
   }
   
+  cancelDelete(){
+    this.showDeleteModal = false;
+
+  }
+  confirmDelete(){
+
+  }
 
   clickupdate(){
     this.router.navigate(['/updateblog',this.id])

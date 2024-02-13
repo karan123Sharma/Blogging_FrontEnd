@@ -35,6 +35,11 @@ export class ApiService {
     return !!localStorage.getItem(this.USER_ID_KEY);
   }
 
+
+  postRegsiterUser(user:User):Observable<object>{
+    return this.http.post(`${this.baseUrl}` + "insertData", user);
+  }
+
   getBlogById(id:number){
     return this.http.get<Blogs>(`${this.baseUrl}`+id);
   }
